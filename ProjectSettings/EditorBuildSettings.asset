@@ -15,14 +15,14 @@ EditorBuildSettings:
     path: Assets/Scenes/01a Start.unity
     guid: 3b92b84025d875f468bb8e1b28367f5b
   - enabled: 1
-    path: Assets/Scenes/02 Level1.unity
-    guid: 52fcea6d6ad11104c917c95cdb9d0f1a
+    path: Assets/Scenes/02 Team Creation.unity
+    guid: 23b7a4ad6ddbb6b498cd35e0ef4bccb1
   - enabled: 1
-    path: Assets/Scenes/03 Win.unity
-    guid: a9ba53b4350f699418cf7bb989e4a1b7
-  - enabled: 1
-    path: Assets/Scenes/04 Lose.unity
-    guid: ffe0b8d256e481a41b1d6544cd1ebf2c
+    path: Assets/Scenes/03a Lobby Tutorial.unity
+    guid: 0b0f48e284cc6d046b3bf765fdb631d8
   - enabled: 1
     path: Assets/Scenes/01b Options.unity
     guid: 7d1381cc84acdc642acb6db5a5f3baff
+  - enabled: 1
+    path: Assets/Scenes/04 Lobby.unity
+    guid: 0c524f6b851e43a42991f6692a12d3b1
