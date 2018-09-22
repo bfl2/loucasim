@@ -2,12 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerStats : MonoBehaviour {
+[System.Serializable]
+public class PlayerStats {
 
-    public int initialMmr { get; set; }
-    public int mmr { get; set; }
-    public int growthPotential { get; set; }
-    public int zoabilidade { get; set; }
-    public int value { get; set; } //passe
-    public int upkeep { get; set; } //salario
+    public int initialMmr;
+    public int mmr;
+    public float growthPotential;
+    public float zoabilidade;
+    public float value; //passe
+    public float upkeep; //salario
+
+    public void SetValues(int init, int mmr, float growth, float zoab, float value, float upkeep)
+    {
+        initialMmr = init;
+        this.mmr = mmr;
+        growthPotential = growth;
+        zoabilidade = zoab;
+        this.value = value;
+        this.upkeep = upkeep;
+
+    }
 }

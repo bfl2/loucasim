@@ -1,14 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
-public class PlayerInfo : MonoBehaviour {
+[Serializable]
+public class PlayerInfo {
 
-    public string name { get; set; }
-    public int position { get; set; }
-    public PlayerStats stats { get; set; }
-    public string modifiers { get; set; }
+    public int ownerId;
+    public int id;
+    public string name;
+    public int position;
+    public PlayerStats stats;
+    public string modifiers;
 
     // Use this for initialization
+    public void SetValues(string namec, int positionc, PlayerStats statc, string modifierc)
+    {
+        name = namec;
+        position = positionc;
+        stats = statc;
+        modifiers = modifierc;
+    }
 
 }

@@ -1,0 +1,88 @@
+{
+    "players": [
+        {
+            "id": 0,
+            "name": "Urso Peludo",
+            "position": 2,
+            "stats": {
+                "initialMmr": 5000,
+                "mmr": 5000,
+                "growthPotential": 0.05,
+                "zoabilidade": 0.25,
+                "value": 1.0,
+                "upkeep": 1.0
+            },
+            "modifiers": "none"
+        },
+         {
+            "id": 1,
+            "name": "Lil",
+            "position": 4,
+            "stats": {
+                "initialMmr": 5800,
+                "mmr": 5800,
+                "growthPotential": -0.1,
+                "zoabilidade": 0.1,
+                "value": 1.0,
+                "upkeep": 1.0
+            },
+            "modifiers": "none"
+        },
+        {
+            "id": 2,
+            "name": "CeltaRebaixado",
+            "position": 2,
+            "stats": {
+                "initialMmr": 4000,
+                "mmr": 4000,
+                "growthPotential": -0.4,
+                "zoabilidade": 0.5,
+                "value": 1.0,
+                "upkeep": 1.0
+            },
+            "modifiers": "none"
+        },
+         {
+            "id": 3,
+            "name": "Mufasa",
+            "position": 4,
+            "stats": {
+                "initialMmr": 4300,
+                "mmr": 4300,
+                "growthPotential": 0.1,
+                "zoabilidade": 0.1,
+                "value": 1.0,
+                "upkeep": 1.0
+            },
+            "modifiers": "none"
+        },
+         {
+            "id": 4,
+            "name": "bebet_awp",
+            "position": 2,
+            "stats": {
+                "initialMmr": 1200,
+                "mmr": 1200,
+                "growthPotential": 1,
+                "zoabilidade": 0.6,
+                "value": 1.0,
+                "upkeep": 1.0
+            },
+            "modifiers": "none"
+        },
+		{
+            "id": 5,
+            "name": "example",
+            "position": 2,
+            "stats": {
+                "initialMmr": 1200,
+                "mmr": 1200,
+                "growthPotential": 1,
+                "zoabilidade": 0.6,
+                "value": 1.0,
+                "upkeep": 1.0
+            },
+            "modifiers": "none"
+        },
+    ]
+}

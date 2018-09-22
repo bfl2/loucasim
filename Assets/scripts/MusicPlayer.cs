@@ -37,14 +37,17 @@ public class MusicPlayer : MonoBehaviour {
         int level= scene.buildIndex;
         audio = GetComponent<AudioSource>();
         Debug.Log("Volume: "+ PlayerPrefsManager.GetMasterVolume());
-       
-        if (Clips[level]!=null&&level<8)
+
+        if (level < 8)
         {
-            Debug.Log("Clip: " + Clips[level] + "|");
-            audio.volume = PlayerPrefsManager.GetMasterVolume();
-            audio.clip = Clips[level];
-            audio.loop = true;
-            audio.Play();
+            if (Clips[level] != null)
+            {
+                Debug.Log("Clip: " + Clips[level] + "|");
+                audio.volume = PlayerPrefsManager.GetMasterVolume();
+                audio.clip = Clips[level];
+                audio.loop = true;
+                audio.Play();
+            }
         }
     }
 

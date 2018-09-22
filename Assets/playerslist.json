@@ -1,0 +1,15 @@
+[
+	{
+		"name": "Urso Peludo",
+		"position": 2,
+		"stats": {
+			"initialMmr": 5100,
+			"mmr": 5100,
+			"growthPotential": 1,
+			"zoabilidade": 1,
+			"value": 5000,
+			"upkeep": 500
+		},
+		"modifiers": "none"
+	}
+]

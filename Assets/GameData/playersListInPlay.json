@@ -1,0 +1,529 @@
+{
+    "players": [
+        {
+            "ownerId": 0,
+            "id": 0,
+            "name": "Urso Peludo",
+            "position": 2,
+            "stats": {
+                "initialMmr": 5101,
+                "mmr": 5101,
+                "growthPotential": 0.05000000074505806,
+                "zoabilidade": 0.25,
+                "value": 4979.0,
+                "upkeep": 199.0
+            },
+            "modifiers": "none"
+        },
+        {
+            "ownerId": 0,
+            "id": 1,
+            "name": "Lil",
+            "position": 4,
+            "stats": {
+                "initialMmr": 5800,
+                "mmr": 5800,
+                "growthPotential": -0.10000000149011612,
+                "zoabilidade": 0.10000000149011612,
+                "value": 5410.0,
+                "upkeep": 216.0
+            },
+            "modifiers": "none"
+        },
+        {
+            "ownerId": 0,
+            "id": 2,
+            "name": "CeltaRebaixado",
+            "position": 1,
+            "stats": {
+                "initialMmr": 4000,
+                "mmr": 4000,
+                "growthPotential": -0.4000000059604645,
+                "zoabilidade": 0.5,
+                "value": 2700.0,
+                "upkeep": 108.0
+            },
+            "modifiers": "none"
+        },
+        {
+            "ownerId": 0,
+            "id": 3,
+            "name": "Mufasa",
+            "position": 1,
+            "stats": {
+                "initialMmr": 4300,
+                "mmr": 4300,
+                "growthPotential": 0.10000000149011612,
+                "zoabilidade": 0.10000000149011612,
+                "value": 4415.0,
+                "upkeep": 177.0
+            },
+            "modifiers": "none"
+        },
+        {
+            "ownerId": 0,
+            "id": 4,
+            "name": "bebet_awp",
+            "position": 1,
+            "stats": {
+                "initialMmr": 1200,
+                "mmr": 1200,
+                "growthPotential": 1.0,
+                "zoabilidade": 0.6000000238418579,
+                "value": 1200.0,
+                "upkeep": 48.0
+            },
+            "modifiers": "none"
+        },
+        {
+            "ownerId": 0,
+            "id": 5,
+            "name": "Half",
+            "position": 1,
+            "stats": {
+                "initialMmr": 2000,
+                "mmr": 2500,
+                "growthPotential": 0.800000011920929,
+                "zoabilidade": 0.4000000059604645,
+                "value": 2650.0,
+                "upkeep": 106.0
+            },
+            "modifiers": "none"
+        },
+        {
+            "ownerId": 0,
+            "id": 6,
+            "name": "Ana The Monster",
+            "position": 4,
+            "stats": {
+                "initialMmr": 3500,
+                "mmr": 3500,
+                "growthPotential": -0.20000000298023225,
+                "zoabilidade": 0.05000000074505806,
+                "value": 3100.0,
+                "upkeep": 124.0
+            },
+            "modifiers": "none"
+        },
+        {
+            "ownerId": 0,
+            "id": 7,
+            "name": "Agiu",
+            "position": 4,
+            "stats": {
+                "initialMmr": 3500,
+                "mmr": 3500,
+                "growthPotential": -0.20000000298023225,
+                "zoabilidade": 0.6000000238418579,
+                "value": 2550.0,
+                "upkeep": 102.0
+            },
+            "modifiers": "none"
+        },
+        {
+            "ownerId": 0,
+            "id": 8,
+            "name": "Rato Alien",
+            "position": 2,
+            "stats": {
+                "initialMmr": 500,
+                "mmr": 500,
+                "growthPotential": 3.0,
+                "zoabilidade": 0.4000000059604645,
+                "value": 850.0,
+                "upkeep": 34.0
+            },
+            "modifiers": "none"
+        },
+        {
+            "ownerId": 0,
+            "id": 9,
+            "name": "Ze da Peixeira",
+            "position": 1,
+            "stats": {
+                "initialMmr": 700,
+                "mmr": 700,
+                "growthPotential": 0.5,
+                "zoabilidade": 0.05000000074505806,
+                "value": 825.0,
+                "upkeep": 33.0
+            },
+            "modifiers": "none"
+        },
+        {
+            "ownerId": 0,
+            "id": 10,
+            "name": "Seraphym",
+            "position": 2,
+            "stats": {
+                "initialMmr": 4000,
+                "mmr": 4000,
+                "growthPotential": 0.10000000149011612,
+                "zoabilidade": 0.05000000074505806,
+                "value": 4150.0,
+                "upkeep": 166.0
+            },
+            "modifiers": "none"
+        },
+        {
+            "ownerId": 0,
+            "id": 11,
+            "name": "STRYGWYR",
+            "position": 2,
+            "stats": {
+                "initialMmr": 2900,
+                "mmr": 2900,
+                "growthPotential": 0.30000001192092898,
+                "zoabilidade": 0.05000000074505806,
+                "value": 3285.0,
+                "upkeep": 131.0
+            },
+            "modifiers": "none"
+        },
+        {
+            "ownerId": 0,
+            "id": 12,
+            "name": "Sacaninha",
+            "position": 4,
+            "stats": {
+                "initialMmr": 2100,
+                "mmr": 2100,
+                "growthPotential": -0.10000000149011612,
+                "zoabilidade": 0.20000000298023225,
+                "value": 1795.0,
+                "upkeep": 72.0
+            },
+            "modifiers": "none"
+        },
+        {
+            "ownerId": 0,
+            "id": 13,
+            "name": "eduardoz0",
+            "position": 4,
+            "stats": {
+                "initialMmr": 900,
+                "mmr": 900,
+                "growthPotential": 0.5,
+                "zoabilidade": 0.05000000074505806,
+                "value": 1075.0,
+                "upkeep": 43.0
+            },
+            "modifiers": "none"
+        },
+        {
+            "ownerId": 0,
+            "id": 14,
+            "name": "Buzz4rd",
+            "position": 4,
+            "stats": {
+                "initialMmr": 4000,
+                "mmr": 4000,
+                "growthPotential": -0.20000000298023225,
+                "zoabilidade": 0.5,
+                "value": 3100.0,
+                "upkeep": 124.0
+            },
+            "modifiers": "none"
+        },
+        {
+            "ownerId": 0,
+            "id": 15,
+            "name": "Byano",
+            "position": 3,
+            "stats": {
+                "initialMmr": 4000,
+                "mmr": 4000,
+                "growthPotential": -0.25,
+                "zoabilidade": 0.5,
+                "value": 3000.0,
+                "upkeep": 120.0
+            },
+            "modifiers": "none"
+        },
+        {
+            "ownerId": 0,
+            "id": 16,
+            "name": ".CapS",
+            "position": 1,
+            "stats": {
+                "initialMmr": 1500,
+                "mmr": 1500,
+                "growthPotential": -0.10000000149011612,
+                "zoabilidade": 0.05000000074505806,
+                "value": 1375.0,
+                "upkeep": 55.0
+            },
+            "modifiers": "none"
+        },
+        {
+            "ownerId": 0,
+            "id": 17,
+            "name": "Bone -0-",
+            "position": 4,
+            "stats": {
+                "initialMmr": 5000,
+                "mmr": 5000,
+                "growthPotential": 0.05000000074505806,
+                "zoabilidade": 0.05000000074505806,
+                "value": 5075.0,
+                "upkeep": 203.0
+            },
+            "modifiers": "none"
+        },
+        {
+            "ownerId": 0,
+            "id": 18,
+            "name": "Chinelo Com Prego",
+            "position": 4,
+            "stats": {
+                "initialMmr": 3500,
+                "mmr": 3500,
+                "growthPotential": -0.6000000238418579,
+                "zoabilidade": 0.30000001192092898,
+                "value": 2150.0,
+                "upkeep": 86.0
+            },
+            "modifiers": "none"
+        },
+        {
+            "ownerId": 0,
+            "id": 19,
+            "name": "iFreezzy, O Arrependido",
+            "position": 2,
+            "stats": {
+                "initialMmr": 4000,
+                "mmr": 4000,
+                "growthPotential": 0.05000000074505806,
+                "zoabilidade": 0.05000000074505806,
+                "value": 4050.0,
+                "upkeep": 162.0
+            },
+            "modifiers": "none"
+        },
+        {
+            "ownerId": 0,
+            "id": 20,
+            "name": "Sathler",
+            "position": 2,
+            "stats": {
+                "initialMmr": 2000,
+                "mmr": 2000,
+                "growthPotential": 1.0,
+                "zoabilidade": 0.6000000238418579,
+                "value": 2400.0,
+                "upkeep": 96.0
+            },
+            "modifiers": "none"
+        },
+        {
+            "ownerId": 0,
+            "id": 21,
+            "name": "One Finger",
+            "position": 4,
+            "stats": {
+                "initialMmr": 1200,
+                "mmr": 1200,
+                "growthPotential": 0.5,
+                "zoabilidade": 0.05000000074505806,
+                "value": 1450.0,
+                "upkeep": 58.0
+            },
+            "modifiers": "none"
+        },
+        {
+            "ownerId": 0,
+            "id": 22,
+            "name": "No Roses",
+            "position": 2,
+            "stats": {
+                "initialMmr": 2800,
+                "mmr": 2800,
+                "growthPotential": 0.10000000149011612,
+                "zoabilidade": 0.05000000074505806,
+                "value": 2890.0,
+                "upkeep": 116.0
+            },
+            "modifiers": "none"
+        },
+        {
+            "ownerId": 0,
+            "id": 23,
+            "name": "Zidane",
+            "position": 3,
+            "stats": {
+                "initialMmr": 3300,
+                "mmr": 3300,
+                "growthPotential": 0.30000001192092898,
+                "zoabilidade": 0.30000001192092898,
+                "value": 3495.0,
+                "upkeep": 140.0
+            },
+            "modifiers": "none"
+        },
+        {
+            "ownerId": 0,
+            "id": 24,
+            "name": "Worthless",
+            "position": 1,
+            "stats": {
+                "initialMmr": 2500,
+                "mmr": 2500,
+                "growthPotential": 0.4000000059604645,
+                "zoabilidade": 0.30000001192092898,
+                "value": 2700.0,
+                "upkeep": 108.0
+            },
+            "modifiers": "none"
+        },
+        {
+            "ownerId": 0,
+            "id": 25,
+            "name": "Kenny Heavens",
+            "position": 3,
+            "stats": {
+                "initialMmr": 3200,
+                "mmr": 3200,
+                "growthPotential": 0.20000000298023225,
+                "zoabilidade": 0.6000000238418579,
+                "value": 2920.0,
+                "upkeep": 117.0
+            },
+            "modifiers": "none"
+        },
+        {
+            "ownerId": 0,
+            "id": 26,
+            "name": "Rodrigo",
+            "position": 3,
+            "stats": {
+                "initialMmr": 3200,
+                "mmr": 3200,
+                "growthPotential": 0.20000000298023225,
+                "zoabilidade": 0.800000011920929,
+                "value": 2720.0,
+                "upkeep": 109.0
+            },
+            "modifiers": "none"
+        },
+        {
+            "ownerId": 0,
+            "id": 27,
+            "name": "Papa Ahab",
+            "position": 4,
+            "stats": {
+                "initialMmr": 2200,
+                "mmr": 2200,
+                "growthPotential": -0.05000000074505806,
+                "zoabilidade": 0.05000000074505806,
+                "value": 2095.0,
+                "upkeep": 84.0
+            },
+            "modifiers": "none"
+        },
+        {
+            "ownerId": 0,
+            "id": 28,
+            "name": "Zirigud",
+            "position": 4,
+            "stats": {
+                "initialMmr": 3600,
+                "mmr": 3600,
+                "growthPotential": 0.20000000298023225,
+                "zoabilidade": 0.05000000074505806,
+                "value": 3910.0,
+                "upkeep": 156.0
+            },
+            "modifiers": "none"
+        },
+        {
+            "ownerId": 0,
+            "id": 29,
+            "name": "Jurw33ha",
+            "position": 1,
+            "stats": {
+                "initialMmr": 3700,
+                "mmr": 3700,
+                "growthPotential": -0.699999988079071,
+                "zoabilidade": 0.05000000074505806,
+                "value": 2355.0,
+                "upkeep": 94.0
+            },
+            "modifiers": "none"
+        },
+        {
+            "ownerId": 0,
+            "id": 30,
+            "name": "Spiesnuk",
+            "position": 2,
+            "stats": {
+                "initialMmr": 1200,
+                "mmr": 1200,
+                "growthPotential": 0.10000000149011612,
+                "zoabilidade": 0.6000000238418579,
+                "value": 660.0,
+                "upkeep": 26.0
+            },
+            "modifiers": "none"
+        },
+        {
+            "ownerId": 0,
+            "id": 31,
+            "name": "rafa_fly1",
+            "position": 3,
+            "stats": {
+                "initialMmr": 3000,
+                "mmr": 3000,
+                "growthPotential": -0.5,
+                "zoabilidade": 0.30000001192092898,
+                "value": 1950.0,
+                "upkeep": 78.0
+            },
+            "modifiers": "none"
+        },
+        {
+            "ownerId": 0,
+            "id": 32,
+            "name": "Rich",
+            "position": 2,
+            "stats": {
+                "initialMmr": 4500,
+                "mmr": 4500,
+                "growthPotential": 0.20000000298023225,
+                "zoabilidade": 0.05000000074505806,
+                "value": 4900.0,
+                "upkeep": 196.0
+            },
+            "modifiers": "none"
+        },
+        {
+            "ownerId": 0,
+            "id": 33,
+            "name": "Bracumbi",
+            "position": 4,
+            "stats": {
+                "initialMmr": 3200,
+                "mmr": 3200,
+                "growthPotential": 0.800000011920929,
+                "zoabilidade": 0.5,
+                "value": 3980.0,
+                "upkeep": 159.0
+            },
+            "modifiers": "Bracumbi"
+        },
+        {
+            "ownerId": 0,
+            "id": 34,
+            "name": "Deco",
+            "position": 4,
+            "stats": {
+                "initialMmr": 3000,
+                "mmr": 3000,
+                "growthPotential": 0.20000000298023225,
+                "zoabilidade": 0.30000001192092898,
+                "value": 3000.0,
+                "upkeep": 120.0
+            },
+            "modifiers": "none"
+        }
+    ]
+}
