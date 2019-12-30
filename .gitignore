@@ -4,3 +4,8 @@
 !.gitignore
 !/Assets/
 !/ProjectSettings/
+Assets/GameData.meta
+Assets/Glitch-Garden-Slides-v.2.pdf
+Assets/Glitch-Garden-Slides-v.2.pdf.meta
+*.meta
+Library/metadata/*
