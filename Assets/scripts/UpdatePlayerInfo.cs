@@ -75,7 +75,7 @@ public class UpdatePlayerInfo : MonoBehaviour {
 
         index++;
         string path = Application.dataPath;
-        string subDir = "Images/formated/rank (" + index+")"; 
+        string subDir = "Images/formated/rank (" + index+")";
         medal = Resources.Load<Sprite>(subDir);//located at resource folder
 
         return medal;

@@ -6,21 +6,26 @@ public class SaveGame : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-		
+
 	}
-    
+
     public void SaveGameData()
     {
         GameManager GM = FindObjectOfType<GameManager>();
-        if (GM!=null){
+        TeamManager TM = FindObjectOfType<TeamManager>();
+        if ( GM != null && TM != null)
+        {
             GM.SaveInPlayGameData();
-        }else{
-            Debug.Log("couldnt find game manager");
+            TM.SaveInPlayGameData();
+        }
+        else
+        {
+            Debug.Log("couldnt find game manager or team manager");
         }
 
 

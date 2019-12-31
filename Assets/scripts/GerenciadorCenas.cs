@@ -10,7 +10,7 @@ public class GerenciadorCenas : MonoBehaviour {
     // Use this for initialization
     private void Start()
     {
-        
+
     }
     private void Update()
     {
@@ -22,7 +22,7 @@ public class GerenciadorCenas : MonoBehaviour {
         {
             LoadNextLevel();
         }
-        
+
     }
     public void SceneSwitch(string Scene)
     {
@@ -40,14 +40,18 @@ public class GerenciadorCenas : MonoBehaviour {
 
     public void SceneSwitchWithAction(string Scene)
     {
-        if(Scene == "03a Lobby Tutorial")
+        TeamManager TM = FindObjectOfType<TeamManager>();
+        if (Scene == "03a Lobby Tutorial")
         {
-            TeamManager TM = FindObjectOfType<TeamManager>();
             TM.VerifyFields();
+            if (TM.setupTeamFlag)
+            {
+                SceneSwitch(Scene);
+            }
         }
-        SceneSwitch(Scene);
+
     }
-    
+
      void OnEnable()
     {
         //Tell our 'OnLevelFinishedLoading' function to start listening for a scene change as soon as this script is enabled.
@@ -64,7 +68,7 @@ public class GerenciadorCenas : MonoBehaviour {
     {
        Debug.Log("Level Loaded "+ scene +" // " + mode);
 
-   
+
     }
     public void quitGame()
     {

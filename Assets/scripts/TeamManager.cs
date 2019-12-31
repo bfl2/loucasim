@@ -40,8 +40,7 @@ public class TeamManager : MonoBehaviour {
 
     void Start()
     {
-    
-            
+        LoadInPlayGameData();
     }
 
     private void InitTeamData(StatusCode.DataOrigin dataOrigin)
@@ -63,7 +62,7 @@ public class TeamManager : MonoBehaviour {
 
     }
     public void SaveInPlayGameData()
-    { 
+    {
         string dataAsJson = JsonUtility.ToJson(teamInfo, true);
         string filePath = Application.dataPath + "/GameData/team/teamInfo.json";
         File.WriteAllText(filePath, dataAsJson);
@@ -78,7 +77,7 @@ public class TeamManager : MonoBehaviour {
         {
             string dataAsJson = File.ReadAllText(filePath);
             Debug.Log(dataAsJson);
-           
+
             teamInfo = JsonUtility.FromJson<TeamInfo>(dataAsJson);
             Debug.Log("Received TeamInfo data " + teamInfo.money + " " + teamInfo.coachName);
 
@@ -106,23 +105,22 @@ public class TeamManager : MonoBehaviour {
 
     void OnLevelFinishedLoading(Scene scene, LoadSceneMode mode)
     {
-        Debug.Log("Level Loaded");
-        Debug.Log(scene.name);
-        Debug.Log(mode);
+        Debug.Log("Level Loaded" + scene.name);
         gerenciadorCenas = FindObjectOfType<GerenciadorCenas>();
         if (scene.name == "02 Team Creation")
         {
-            setupTeamFlag = true;
+            setupTeamFlag = false;
             InitTeamData(StatusCode.DataOrigin.DEFAULT);
             teamInfo.money = 15000;
             SaveInPlayGameData();
-
         }
-        else if (scene.name == "04 Lobby")
+        else if (scene.name == "04 Lobby" && !setupTeamFlag)
         {
-            setupTeamFlag = false;
+            setupTeamFlag = true;
             LoadInPlayGameData();
-            InitTeamData(StatusCode.DataOrigin.DEFAULT);
+            UpdateUIDisplay();
+        } else if (scene.name == "04 Lobby")
+        {
             UpdateUIDisplay();
         }
     }
@@ -131,10 +129,7 @@ public class TeamManager : MonoBehaviour {
 
     private void PopulateHabilitiesList()
     {
-       
         dropdown.AddOptions(names);
-        
-
     }
 
     private void UpdateUIDisplay()
@@ -175,10 +170,16 @@ public class TeamManager : MonoBehaviour {
 
     public void VerifyFields()
     {
+        GameObject cvs = GameObject.Find("Canvas");
+        InputField[] inputFields = cvs.GetComponentsInChildren<InputField>();
+        teamInfo.coachName = inputFields[0].text;
+        teamInfo.teamName = inputFields[1].text;
+        teamInfo.abilityId = cvs.GetComponentInChildren<Dropdown>().value;
 
-        if(teamInfo.teamName.Length>1 && teamInfo.coachName.Length > 1 && teamInfo.abilityId >=0)
+        if (teamInfo.teamName.Length>1 && teamInfo.coachName.Length > 1 && teamInfo.abilityId >=0)
         {
             SaveInPlayGameData();
+            this.setupTeamFlag = true;
         }
         else
         {

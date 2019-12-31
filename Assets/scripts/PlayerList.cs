@@ -22,4 +22,15 @@ public class PlayerList {
         player.id = players.Count;
         players.Add(player);
     }
+
+    public void Remove(PlayerInfo player)
+    {
+        foreach(PlayerInfo pl in this.players)
+        {
+            if(player.id == pl.id)
+            {
+                this.players.Remove(pl);
+            }
+        }
+    }
 }

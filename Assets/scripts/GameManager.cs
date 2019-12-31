@@ -2,7 +2,7 @@
 using UnityEngine.SceneManagement;
 using System.Collections;
 using System.IO;
-using System.Collections.Generic;       //Allows us to use Lists. 
+using System.Collections.Generic;       //Allows us to use Lists.
 using System;
 using Assets.scripts;
 
@@ -45,10 +45,10 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        LoadDefaultGameData();
+        LoadInPlayGameData();
         CalculatePlayersPrice();
         DisplayListOfPlayers(playersInPlay);
-        
+
     }
     private void OnLevelWasLoaded(int level)
     {
@@ -139,7 +139,7 @@ public class GameManager : MonoBehaviour
             Debug.Log("gameData file not found");
         }
 
-        
+
     }
 
     public void SaveInPlayGameData()
