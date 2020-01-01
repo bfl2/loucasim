@@ -11,21 +11,26 @@ public class UpdatePlayerInfo : MonoBehaviour {
     public Sprite medal;
 
     // Use this for initialization
-    void Start () {
+    void Start ()
+    {
 
     }
 
     // Update is called once per frame
-    void Update() {
-        getRankImage(currentFocusedPlayer.stats.mmr);
-        this.transform.GetChild(1).GetComponent<Image>().sprite = medal;
-        this.transform.GetChild(3).GetComponent<Text>().text = currentFocusedPlayer.stats.zoabilidade.ToString();
-        this.transform.GetChild(4).GetComponent<Text>().text = currentFocusedPlayer.stats.growthPotential.ToString();
-        this.transform.GetChild(5).GetComponent<Text>().text = currentFocusedPlayer.stats.value.ToString();
-        this.transform.GetChild(6).GetComponent<Text>().text = currentFocusedPlayer.stats.upkeep.ToString();
-        this.transform.GetChild(7).GetComponent<Text>().text = currentFocusedPlayer.name;
-        this.transform.GetChild(8).GetComponent<Text>().text = IntToRole(currentFocusedPlayer.position);
-        //Debug.Log("mmr:" + currentFocusedPlayer.stats.mmr);
+    void Update()
+    {
+        if (currentFocusedPlayer != null)
+        {
+            GetRankImage(currentFocusedPlayer.stats.mmr);
+            this.transform.GetChild(1).GetComponent<Image>().sprite = medal;
+            this.transform.GetChild(3).GetComponent<Text>().text = currentFocusedPlayer.stats.zoabilidade.ToString();
+            this.transform.GetChild(4).GetComponent<Text>().text = currentFocusedPlayer.stats.growthPotential.ToString();
+            this.transform.GetChild(5).GetComponent<Text>().text = currentFocusedPlayer.stats.value.ToString();
+            this.transform.GetChild(6).GetComponent<Text>().text = currentFocusedPlayer.stats.upkeep.ToString();
+            this.transform.GetChild(7).GetComponent<Text>().text = currentFocusedPlayer.name;
+            this.transform.GetChild(8).GetComponent<Text>().text = IntToRole(currentFocusedPlayer.position);
+            //Debug.Log("mmr:" + currentFocusedPlayer.stats.mmr);
+        }
     }
 
     private string IntToRole(int pos)
@@ -51,20 +56,24 @@ public class UpdatePlayerInfo : MonoBehaviour {
         }
         return role;
     }
-    public Sprite getRankImage(int mmr)
+    public Sprite GetRankImage(int mmr)
     {
-        int[] mmrRanges = {0, 30, 50, 80, 130, 180, 220, 290, 360, 530, 700, 970, 1140, 1310, 1580,
-                            1750, 1920, 2190, 2360, 2530, 2700, 2970, 3140, 3310, 3580, 3750, 3920, 4190, 4360, 4530, 4700, 4970, 5140, 5310, 5580, 6000, 7000, 8000};
+        int[] mmrRanges = {0, 80, 150, 200, 330, 480, 520, 690, 760, 930, 1100, 1470, 1540, 1610, 1780,
+                            1850, 1920, 2190, 2360, 2530, 2700, 2970, 3140, 3310, 3580, 3750, 3920, 4190, 4360, 4530, 4700, 4970, 5140, 5310, 5580, 6000, 7000, 8000};
         int index;
         for (index = 0; index < mmrRanges.Length; index++)
         {
-            if (mmr < 30)
+            if(index == mmrRanges.Length)
+            {
+                break;
+            }
+            if (mmr < 80)
             {
                 break;
             }
             if(mmr > 7000)
             {
-                index = mmrRanges.Length;
+                index = mmrRanges.Length -1;
                 break;
             }
             if ((mmr < mmrRanges[index + 1])&&(mmr>mmrRanges[index]))
@@ -74,10 +83,22 @@ public class UpdatePlayerInfo : MonoBehaviour {
         }
 
         index++;
-        string path = Application.dataPath;
-        string subDir = "Images/formated/rank (" + index+")";
+        string subDir = "Images/formated/rank (" + index + ")";
         medal = Resources.Load<Sprite>(subDir);//located at resource folder
 
         return medal;
+    }
+
+
+    public void DisplayBoughtHUD()
+    {
+        GetRankImage(0);
+        this.transform.GetChild(1).GetComponent<Image>().sprite = medal;
+        this.transform.GetChild(3).GetComponent<Text>().text = "";
+        this.transform.GetChild(4).GetComponent<Text>().text = "";
+        this.transform.GetChild(5).GetComponent<Text>().text = "";
+        this.transform.GetChild(6).GetComponent<Text>().text = "";
+        this.transform.GetChild(7).GetComponent<Text>().text = "Player purchased!";
+        this.transform.GetChild(8).GetComponent<Text>().text = "";
     }
 }

@@ -16,4 +16,13 @@ public class TeamInfo  {
     public string coachName;
     [SerializeField]
     public int abilityId;
+
+    public TeamInfo()
+    {
+        money = 15000;
+        hiredPlayers = new PlayerList();
+        teamName = "Player";
+        coachName = "Coach";
+        abilityId = 0;
+    }
 }

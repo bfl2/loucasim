@@ -111,7 +111,7 @@ public class TeamManager : MonoBehaviour {
         {
             setupTeamFlag = false;
             InitTeamData(StatusCode.DataOrigin.DEFAULT);
-            teamInfo.money = 15000;
+            teamInfo = new TeamInfo();
             SaveInPlayGameData();
         }
         else if (scene.name == "04 Lobby" && !setupTeamFlag)

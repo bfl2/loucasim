@@ -19,8 +19,7 @@ public class PlayerList {
 
     public void Add(PlayerInfo player)
     {
-        player.id = players.Count;
-        players.Add(player);
+        this.players.Add(player);
     }
 
     public void Remove(PlayerInfo player)

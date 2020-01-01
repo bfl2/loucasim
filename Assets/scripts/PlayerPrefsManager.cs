@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PlayerPrefsManager : MonoBehaviour {
- 
+
     const string MASTER_VOLUME_KEY = "master_volume";
     const string DIFFICULT_KEY = "difficulty";
 
@@ -45,5 +45,5 @@ public class PlayerPrefsManager : MonoBehaviour {
         return PlayerPrefs.GetFloat(DIFFICULT_KEY);
     }
 
-    
+
 }
