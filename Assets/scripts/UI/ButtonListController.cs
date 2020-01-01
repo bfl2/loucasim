@@ -21,18 +21,19 @@ public class ButtonListController : MonoBehaviour
         {
             Debug.LogError("Game Manager or Team Manager or content is null");
         }
-    }
-    void Update()
-    {
+
         if (!isUpdated)
         {
-            PlayerList playerList = this.GetSourceList();
-            foreach (PlayerInfo player in playerList.players.ToArray())
+            List<PlayerInfo> playerList = new List<PlayerInfo>(this.GetSourceList().players);
+            foreach (PlayerInfo player in playerList)
             {
                 InsertNewItem(player);
             }
             isUpdated = true;
         }
+    }
+    void Update()
+    {
 
     }
 
